@@ -37,6 +37,10 @@
     text-shadow: 2px 2px var(--color-p);
 }
 
+.transition{
+    transition: .5s;
+}
+
 body{
     background-color: var(--color-s);
 }
@@ -50,6 +54,21 @@ body{
 .btn-contacts{
     padding: 5px 10px;
     background-color: var(--color-a);
+}
+
+.nav-scrolled{
+    background-color: var(--color-s);
+    animation: fade-down .5s;
+}
+
+@keyframes fade-down {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
 }
 
 
@@ -124,28 +143,59 @@ body{
 .img-1{
     width: 70%;
     aspect-ratio: 1;
+    background-image: url(./media/piazza.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .img-2{
     width: 100%;
     aspect-ratio: 1;
+    background-image: url(./media/colosseo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .img-3{
     width: 50%;
     aspect-ratio: 1;
+    background-image: url(./media/chad-greiter--0gBnnMdQPw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .img-4{
     width: 70%;
     aspect-ratio: 1;
+    background-image: url(./media/statue.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-/* SEZIONE SPAZIO  */
+/* SEZIONE REVIEW  */
 .bg-space{
     background-color: rgb(220, 220, 220);
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+.review{
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-review{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid var(--color-a);
+}
+
+
 
 /* SENZIONE COLAZIONE  */
 .box-breakfast{
@@ -175,4 +225,9 @@ body{
     border: 4px double rgba(128, 128, 128, 0.5);
     padding: 5px;
     margin-bottom: 30px;
+}
+
+/* FOOTER  */
+.bg-footer{
+    background-color: rgb(220, 220, 220);
 }
