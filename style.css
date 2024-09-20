@@ -231,3 +231,41 @@ body{
 .bg-footer{
     background-color: rgb(220, 220, 220);
 }
+
+/* DOVE SIAMO ---------------------------------------------------------------------  */
+
+.mapFrame{
+    width: 100%;
+    height: 500px;
+}
+
+.full-line{
+    position: relative;
+}
+.full-line::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-a);
+}
+
+.icon-box-doveSiamo{
+    aspect-ratio: 1/1;
+    width: 200px;
+    padding: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--color-a);
+}
+
+.icon-box-doveSiamo-2{
+    position: relative;
+    z-index: 2;
+    aspect-ratio: 1/1;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--color-a);
+    background-color: var(--color-s);
+}
