@@ -101,6 +101,10 @@ body{
     backdrop-filter: blur(5px);
 }
 
+.rome{
+    font-size: calc(50px + 5vw);
+}
+
 
 /* Sezione Chi Siamo  */
 .line-r{
@@ -218,6 +222,19 @@ body{
     align-items: center;
     text-align: center;
     box-shadow: 2px 2px 50px rgba(128, 128, 128, 0.3);
+    transition: .5s;
+}
+
+.box-services:hover > i{
+    color: var(--color-p);
+}
+.box-services:hover > h4{
+    color: var(--color-s);
+}
+
+.box-services:hover {
+    background-color: var(--color-a);
+    scale: 1.1;
 }
 
 .icon-box{
@@ -229,8 +246,13 @@ body{
 
 /* FOOTER  */
 .bg-footer{
-    background-color: rgb(220, 220, 220);
+    background:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url(./media/ponte_roma.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
+
+
 
 /* DOVE SIAMO ---------------------------------------------------------------------  */
 
@@ -268,4 +290,12 @@ body{
     border-radius: 50%;
     border: 2px solid var(--color-a);
     background-color: var(--color-s);
+}
+
+.img-box-doveSiamo{
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid var(--color-a);
 }
