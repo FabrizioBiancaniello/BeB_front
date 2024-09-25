@@ -299,3 +299,13 @@ body{
     padding: 5px;
     border: 2px solid var(--color-a);
 }
+
+/* CONTATTI ------------------------------------------------------------------------------------ */
+
+.bg-contacts{
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(./media/piazza.jpg);
+    height: 500px;
+    max-height: 50vh;
+    background-size: cover;
+    background-position: top center;
+}
