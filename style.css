@@ -309,3 +309,33 @@ body{
     background-size: cover;
     background-position: top center;
 }
+
+.box-form{
+    background-color: var(--color-a-op);
+    border-radius: 20px;
+}
+
+input, textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-p);
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 100px;
+}
+
+input:focus, input:active {
+    outline: none;
+}
+
+textarea:focus, textarea:active{
+    outline: none;
+}
+
+.btn-form{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-p);
+}
