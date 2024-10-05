@@ -5,6 +5,7 @@
     --color-a: #E0BC75;
     --color-a-op: #e0bc7574;
     --color-w: rgb(37 211 102);
+    --color-g: rgb(232, 232, 232);
 }
 *{
     font-family: "Playfair Display", system-ui;
@@ -41,6 +42,10 @@
     text-shadow: 2px 2px var(--color-p);
 }
 
+.bg-g{
+    background-color: var(--color-g);
+}
+
 .transition{
     transition: .5s;
 }
@@ -50,6 +55,25 @@ body{
 }
 
 /* NAV  */
+.m-language{
+    margin: 0px 10vw 0px 0px;
+}
+
+.btn-dropdown {
+    border: none;
+    background: transparent;
+    font-size: larger;
+}
+
+.dropdown-menu-cus{
+    min-width: 100%;
+    font-size: larger;
+}
+
+.btn-flag{
+    cursor: pointer;
+}
+
 .nav-link{
     font-size: large;
     font-weight: 500;
@@ -481,7 +505,19 @@ textarea:focus, textarea:active{
 
 
 
-/* MNEDIA QUERIES  */
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (min-width: 660px) {
+    .btn-flag:hover{
+        opacity: 0.8;
+    }
+}
+
+
 @media screen and (max-width: 660px) {
     .btn-contacts{
         padding: 0px;
