@@ -84,10 +84,6 @@ body{
     background-color: var(--color-a);
 }
 
-.btn-contacts:hover {
-    filter: brightness(75%);
-}
-
 .nav-scrolled{
     background-color: var(--color-s);
     animation: fade-down .5s;
@@ -124,17 +120,6 @@ body{
     background-color: var(--color-a);
     transition: 0.5s;
 }
-
-.nav-link-cus:hover{
-    opacity: 0.8;
-}
-
-.nav-link-cus:hover.nav-link-cus::after{
-    width: 100%;
-}
-
-
-
 
 
 /* HEADER  */
@@ -206,10 +191,6 @@ body{
     border: none;
 }
 
-.btn-cta:hover {
-    filter: brightness(75%);
-}
-
 .img-1{
     width: 70%;
     aspect-ratio: 1;
@@ -245,7 +226,7 @@ body{
 }
 
 .review{
-    height: 400px;
+    height: 450px;
     width: 600px;
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.4);
@@ -291,23 +272,22 @@ body{
     transition: .5s;
 }
 
-.box-services:hover > i{
-    color: var(--color-p);
-}
-.box-services:hover > h4{
-    color: var(--color-s);
-}
-
-.box-services:hover {
-    background-color: var(--color-a);
-    scale: 1.1;
-}
-
 .icon-box{
     aspect-ratio: 1/1;
     border: 4px double rgba(128, 128, 128, 0.5);
     padding: 5px;
     margin-bottom: 30px;
+}
+
+
+.swiper-slide-breakfast{
+    width: 400px !important;
+    max-width: 100%;
+
+}
+
+.img-carousel-breakfast{
+    width: 100%;
 }
 
 
@@ -380,6 +360,11 @@ body{
     max-height: 50vh;
     background-size: cover;
     background-position: bottom center;
+}
+
+.img-carousel-rooms{
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 .border-img-header{
     width: 50%;
@@ -511,14 +496,46 @@ textarea:focus, textarea:active{
 
 /* MEDIA QUERIES  */
 
-@media screen and (min-width: 660px) {
+/* DESKTOP  */
+@media screen and (min-width: 992px) {
+    .btn-contacts:hover {
+        filter: brightness(75%);
+    }
+
     .btn-flag:hover{
         opacity: 0.8;
     }
+
+    .nav-link-cus:hover{
+        opacity: 0.8;
+    }
+    
+    .nav-link-cus:hover.nav-link-cus::after{
+        width: 100%;
+    }
+    .btn-cta:hover {
+        filter: brightness(75%);
+    }
+    .box-services:hover > i{
+        color: var(--color-p);
+    }
+    .box-services:hover > h4{
+        color: var(--color-s);
+    }
+    
+    .box-services:hover {
+        background-color: var(--color-a);
+        scale: 1.1;
+    }
 }
 
-
+ /* MOBILE  */
 @media screen and (max-width: 660px) {
+
+}
+
+/* TABLET  */
+@media screen and (max-width: 991px) {
     .btn-contacts{
         padding: 0px;
         background-color: transparent;

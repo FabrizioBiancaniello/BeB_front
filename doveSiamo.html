@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- FLAG ICONS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +22,22 @@
             <div>
                 <a class="color-p allura fs-3 nav-link-cus pb-0" href="#">San Peter Rome</a>
             </div>
-            <button class="navbar-toggler-cus color-p d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler-cus color-p d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list fs-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-flex align-items-center">
+                        <div class="dropdown">
+                            <button class="btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fi fi-it"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-cus ">
+                                <li class="d-flex justify-content-center mb-2"><span class="fi fi-it btn-flag"></span></li>
+                                <li class="d-flex justify-content-center"><span class="fi fi-gb btn-flag"></span></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link-cus mx-lg-4 color-p montserrat" aria-current="page" href="./index.html">HOME</a>
                     </li>
@@ -34,97 +48,97 @@
                         <a class="nav-link-cus mx-lg-4 color-p montserrat" href="./doveSiamo.html">DOVE SIAMO</a>
                     </li>
                     <li class="nav-item btn-contacts">
-                        <a class="nav-link-cus mx-lg-4 color-p montserrat " href="./contatti.html">CONTATTI</a>
+                        <a class="nav-link-cus mx-lg-4 link-contact color-s montserrat " href="./contatti.html">CONTATTI</a>
                     </li>
                     
                 </ul>
             </div>
         </div>
     </nav>
-
-    <iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5943.350791194671!2d12.439694676118956!3d41.856813171244156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258ab42dcaa7ad%3A0xcae656a1f002bbaf!2sVia%20Isacco%20Artom%2C%2000151%20Roma%20RM!5e0!3m2!1sen!2sit!4v1726838830119!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <!-- SEZIONE DOVE SIAMO -->
-        <section class="container my-md-5 py-5">
-            <div class="row">
-                <!-- Colonna testo  -->
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-baseline">
-                    <h3 class="color-a montserrat fs-5"><span class="line-r">DOVE SIAMO</span></h3>
-                    <h3 class="fw-bold">Situati nel cuore della città eterna</h3>
-                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil ipsa magnam. Minus optio cumque accusantium, iste odio quam iure? Quo, nobis! Et harum quaerat maxime provident sunt quasi ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga repudiandae dolorum cupiditate ea error! Vero temporibus non sed, accusantium, asperiores dolor excepturi totam accusamus cupiditate ad harum, expedita necessitatibus.</p>
-                </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img class="img-box-doveSiamo" src="./media/doveSiamoPage/dome2.jpg" alt="">
-                </div>
+    
+    <iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.754360885602!2d12.453269377308658!3d41.89813956415718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f60692fd84397%3A0x6bdadf187b4b004e!2sPiazza%20di%20Santa%20Maria%20alle%20Fornaci%2C%202%2C%2000165%20Roma%20RM!5e0!3m2!1sit!2sit!4v1728295083122!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <!-- SEZIONE DOVE SIAMO -->
+    <section class="container my-md-5 py-5">
+        <div class="row">
+            <!-- Colonna testo  -->
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-baseline">
+                <h3 class="color-a montserrat fs-5"><span class="line-r">DOVE SIAMO</span></h3>
+                <h3 class="fw-bold">Situati nel cuore della città eterna</h3>
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil ipsa magnam. Minus optio cumque accusantium, iste odio quam iure? Quo, nobis! Et harum quaerat maxime provident sunt quasi ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga repudiandae dolorum cupiditate ea error! Vero temporibus non sed, accusantium, asperiores dolor excepturi totam accusamus cupiditate ad harum, expedita necessitatibus.</p>
             </div>
-        </section>
-
-        <!-- SEZIONE COME RAGGIUNGERCI -->
-        <section class="container my-md-5 py-5">
-            <div class="row justify-content-end">
-                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-2 order-lg-1">
-                    <img class="img-box-doveSiamo" src="./media/doveSiamoPage/street.jpg" alt="">
-                </div>
-                <!-- Colonna testo  -->
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-baseline order-1 order-lg-2">
-                    <h3 class="color-a montserrat fs-5 text-end w-100"><span class="line-l">COME RAGGIUNGERCI</span></h3>
-                    <h3 class="fw-bold text-end w-100">Indicazioni per arrivare al B&B</h3>
-                    <p class="my-4 text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil ipsa magnam. Minus optio cumque accusantium, iste odio quam iure? Quo, nobis! Et harum quaerat maxime provident sunt quasi ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga repudiandae dolorum cupiditate ea error! Vero temporibus non sed, accusantium, asperiores dolor excepturi totam accusamus cupiditate ad harum, expedita necessitatibus.</p>
-                </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="img-box-doveSiamo" src="./media/doveSiamoPage/dome2.jpg" alt="">
             </div>
-        </section>
-
-         <!-- SEZIONE COSA VEDERE -->
-         <section class="container my-md-5 py-5">
-            <div class="row">
-                <!-- Colonna testo  -->
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-baseline">
-                    <h3 class="color-a montserrat fs-5"><span class="line-r">COSA VEDERE</span></h3>
-                    <h3 class="fw-bold">Scopri le meraviglie di Roma a due passi da noi</h3>
-                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil ipsa magnam. Minus optio cumque accusantium, iste odio quam iure? Quo, nobis! Et harum quaerat maxime provident sunt quasi ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga repudiandae dolorum cupiditate ea error! Vero temporibus non sed, accusantium, asperiores dolor excepturi totam accusamus cupiditate ad harum, expedita necessitatibus.</p>
-                </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img class="img-box-doveSiamo" src="./media/doveSiamoPage/ruins.jpg" alt="">
-                </div>
+        </div>
+    </section>
+    
+    <!-- SEZIONE COME RAGGIUNGERCI -->
+    <section class="container my-md-5 py-5">
+        <div class="row justify-content-end">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-2 order-lg-1">
+                <img class="img-box-doveSiamo" src="./media/doveSiamoPage/street.jpg" alt="">
             </div>
-        </section>
-
-
-
-        <!-- FOOTER  -->
-        <footer class="container-fluid bg-footer pt-5">
-            <div class="row justify-content-center pt-5">
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <h4 class="fs-4 text-center text-lg-start color-s">Accoglienza e comfort per un soggiorno indimenticabile.</h4>
-                            <!-- <h4 class="text-primary my-3">Booking.com</h4> -->
-                        </div>
-                        <div class="col-6 col-lg-4 d-flex flex-column align-items-center my-3 my-lg-0">
-                            <h4 class="color-s"><i class="bi bi-geo-alt-fill me-2 color-a"></i> San Peter Rome</h4>
-                            <ul class="list-unstyled text-secondary">
-                                <li>Via lorem ipsum, 777</li>
-                                <li>347 xx xx xxx</li>
-                                <li>info@info.com</li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-lg-4 my-3 my-lg-0 d-flex flex-column align-items-center align-items-lg-end">
-                            <h4 class="color-s">Quick Links</h4>
-                            <ul class="list-unstyled text-secondary">
-                                <li>Home</li>
-                                <li>Stanze</li>
-                                <li>Dove Siamo</li>
-                                <li>Contatti</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 border-top border-dark mt-3 d-lg-flex justify-content-between">
-                            <p class="color-s pt-3 text-center"> Copyright &copy; 2024 All rights reserved to TBM </p>
-                            <p class="color-s pt-3 text-center"><span class="pe-3 border-end border-secondary">Terms Of Use</span> <span class="ps-3">Privacy Policy</span></p>
-                        </div>
+            <!-- Colonna testo  -->
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-baseline order-1 order-lg-2">
+                <h3 class="color-a montserrat fs-5 text-end w-100"><span class="line-l">COME RAGGIUNGERCI</span></h3>
+                <h3 class="fw-bold text-end w-100">Indicazioni per arrivare al B&B</h3>
+                <p class="my-4 text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil ipsa magnam. Minus optio cumque accusantium, iste odio quam iure? Quo, nobis! Et harum quaerat maxime provident sunt quasi ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga repudiandae dolorum cupiditate ea error! Vero temporibus non sed, accusantium, asperiores dolor excepturi totam accusamus cupiditate ad harum, expedita necessitatibus.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SEZIONE COSA VEDERE -->
+    <section class="container my-md-5 py-5">
+        <div class="row">
+            <!-- Colonna testo  -->
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-baseline">
+                <h3 class="color-a montserrat fs-5"><span class="line-r">COSA VEDERE</span></h3>
+                <h3 class="fw-bold">Scopri le meraviglie di Roma a due passi da noi</h3>
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil ipsa magnam. Minus optio cumque accusantium, iste odio quam iure? Quo, nobis! Et harum quaerat maxime provident sunt quasi ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga repudiandae dolorum cupiditate ea error! Vero temporibus non sed, accusantium, asperiores dolor excepturi totam accusamus cupiditate ad harum, expedita necessitatibus.</p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="img-box-doveSiamo" src="./media/doveSiamoPage/ruins.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- FOOTER  -->
+    <footer class="container-fluid bg-footer pt-5">
+        <div class="row justify-content-center pt-5">
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <h4 class="fs-5 text-center text-lg-start color-s">Accoglienza e comfort per un soggiorno indimenticabile.</h4>
+                        <!-- <h4 class="text-primary my-3">Booking.com</h4> -->
+                    </div>
+                    <div class="col-6 col-lg-4 d-flex flex-column align-items-center my-3 my-lg-0">
+                        <h4 class="color-s title-footer"><i class="bi bi-geo-alt-fill me-2 color-a"></i> San Peter Rome</h4>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="text-center">Piazza Santa Maria alle Fornaci, 2</li>
+                            <li class="text-center">+39 3896352473</li>
+                            <li class="text-center">info@sanpeterome.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-4 my-3 my-lg-0 d-flex flex-column align-items-center align-items-lg-end">
+                        <h4 class="color-s title-footer">Quick Links</h4>
+                        <ul class="list-unstyled text-secondary">
+                            <li>Home</li>
+                            <li>Stanze</li>
+                            <li>Dove Siamo</li>
+                            <li>Contatti</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 border-top border-dark mt-3 d-lg-flex justify-content-between">
+                        <p class="color-s pt-3 text-center"> Copyright &copy; 2024 All rights reserved to TBM </p>
+                        <p class="color-s pt-3 text-center"><span class="pe-3 border-end border-secondary">Terms Of Use</span> <span class="ps-3">Privacy Policy</span></p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- <script src="./main.js"></script> -->
