@@ -42,6 +42,10 @@
     text-shadow: 2px 2px var(--color-p);
 }
 
+.bg-s{
+    background-color: var(--color-s);
+}
+
 .bg-g{
     background-color: var(--color-g);
 }
@@ -87,6 +91,7 @@ body{
 .nav-scrolled{
     background-color: var(--color-s);
     animation: fade-down .5s;
+    box-shadow: 1px 1px 5px rgba(198, 198, 198, 0.555);
 }
 
 @keyframes fade-down {
@@ -124,7 +129,6 @@ body{
 
 /* HEADER  */
 .bg-hero{
-    /* background:linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(245,245,245,0.2) 10%, transparent 100%), url(./media/vatican_light.jpg); */
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./media/vatican_light.jpg);
     height: 700px;
     max-height: 100vh;
@@ -530,8 +534,13 @@ textarea:focus, textarea:active{
 }
 
  /* MOBILE  */
-@media screen and (max-width: 660px) {
-
+@media screen and (max-width: 760px) {
+    /* TODO: Da cambiare immagine di sfondo header mobile  */
+    .bg-hero{
+        background:linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./media/vatican_light_cut.jpg);
+        background-size: cover;
+        background-position: top center;
+    }
 }
 
 /* TABLET  */
